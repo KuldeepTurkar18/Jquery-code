@@ -1,7 +1,6 @@
 # gridinfo
 
 <!-- load more and less jquery code -->
-
 $(document).ready(function () {
   $('.trackrecord-section .casestudy-box:lt(6)').show();
   $('#show-caseLess').hide();
