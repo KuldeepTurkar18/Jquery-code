@@ -53,3 +53,19 @@ $("a[href='#opening-detail']").click(function() {
   }, 500);
   return false;
 });
+
+
+<!-- equal div height jquery code -->
+
+$(document).ready(function(){
+	var height = [];
+
+	$('divclass').each(function(){
+		height.push($(this).height());
+	});
+
+	var maxheight = Math.max.apply(null,height);
+
+	$('divclass').height(maxheight);
+
+});
