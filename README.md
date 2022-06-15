@@ -45,3 +45,11 @@ $(document).scroll(function() {
       }
       
     });
+    
+<!--   smooth scroll on click jquery code -->
+$("a[href='#opening-detail']").click(function() {
+  $('html, body').animate({
+    scrollTop: $("#opening-detail").offset().top
+  }, 500);
+  return false;
+});
