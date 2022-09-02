@@ -69,3 +69,23 @@ $(document).ready(function(){
 	$('divclass').height(maxheight);
 
 });
+
+<!-- carosal next and prev buton disabled when product move fiest or last -->
+
+$('.carousel').carousel({
+	  wrap: false
+	}).on('slid.bs.carousel', function () {
+		curSlide = $('.active');
+	  if(curSlide.is( ':first-child' )) {
+		 $('.left').hide();
+		 return;
+	  } else {
+		 $('.left').show();	  
+	  }
+	  if (curSlide.is( ':last-child' )) {
+		 $('.right').hide();
+		 return;
+	  } else {
+		 $('.right').show();	  
+	  }
+	});
