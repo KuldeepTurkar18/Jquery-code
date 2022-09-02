@@ -1,4 +1,4 @@
-# gridinfo
+# jquery useful code
 
 <!-- load more and less jquery code -->
 $(document).ready(function () {
