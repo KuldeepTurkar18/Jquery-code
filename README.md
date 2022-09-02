@@ -70,7 +70,7 @@ $(document).ready(function(){
 
 });
 
-<!-- carosal next and prev buton disabled when product move fiest or last -->
+<!-- carosal next and prev buton disabled when product move first or last -->
 
 $('.carousel').carousel({
 	  wrap: false
